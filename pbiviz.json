@@ -1,0 +1,16 @@
+{"visual":{"name":"myCard",
+    "displayName":"My first Card",
+    "guid":"myCard0C9344B84A2D4C9EA84F14B44A189AB3",
+    "visualClassName":"Visual",
+    "version":"1.0.0",
+    "description":"Affiche une valeur de mesure de mise en forme à l’intérieur d’un cercle",
+    "supportUrl": "https://community.powerbi.com",
+    "gitHubUrl": "https://github.com/microsoft/PowerBI-visuals-circlecard"
+    },
+    "apiVersion":"2.6.0",
+    "author":{"name":"GATIEN","email":"frederic.gatien@oralink.fr"},
+    "assets":{"icon":"assets/icon.png"},
+    "externalJS":[],
+    "style":"style/visual.less",
+    "capabilities":"capabilities.json",
+    "dependencies":null,"stringResources":[]}

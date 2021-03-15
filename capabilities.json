@@ -1,0 +1,385 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Category",
+            "name": "category",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Indicators",
+            "name": "measure",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Objectifs",
+            "name": "objectif",
+            "kind": "Measure"
+        }        
+    ],
+
+    
+
+
+    "objects": 
+        {
+            
+            "rcv_script": {
+                "properties": {
+                  "provider": {
+                    "type": { "text": true }
+                  },
+                  "source": {
+                    "type": {
+                      "scripting": { "source": true }
+                    }
+                  }
+                }
+              },
+              
+            "form": {
+                "displayName": "Form",
+                "properties": {
+                    "show": {
+                        "displayName": "Enable Axis Form",
+                        "type": { "bool": true }
+                    },
+                    "formColor1": {
+                        "displayName": "Background color 1 (<seuil 1)",
+                        "description": "The fill color of the form 1.",
+                        "type": {
+                            "fill": {
+                                "solid": {
+                                    "color": true
+                                }
+                            }
+                        }
+                    },
+                    "formColor2": {
+                        "displayName": "Background color 2 (>seuil1 and < seuil2)",
+                        "description": "The fill color of the form 2 ",
+                        "type": {
+                            "fill": {
+                                "solid": {
+                                    "color": true
+                                }
+                            }
+                        }
+                    },
+                    "formColor3": {
+                        "displayName": "Background color 3 (> seuil2)",
+                        "description": "The fill color of the form 3.",
+                        "type": {
+                            "fill": {
+                                "solid": {
+                                    "color": true
+                                }
+                            }
+                        }
+                    },
+                    "formForm": {
+                        "displayName": "Form",
+                        "description": "choose your form",
+                        "type": {
+                            "enumeration": [
+                                {
+                                    "displayName": "Circle",
+                                    "value": "Circle"
+                                },
+                                {
+                                    "displayName": "Rectangle",
+                                    "value": "Rectangle"
+                                }
+                            ]
+                        }  
+                    },
+                    "formOrientation": {
+                        "displayName": "Orientation",
+                        "description": "choose your form",
+                        "type": {
+                            "enumeration": [
+                                {
+                                    "displayName": "Verticale",
+                                    "value": "Verticale"
+                                },
+                                {
+                                    "displayName": "Horizontale",
+                                    "value": "Horizontale"
+                                }
+                            ]
+                        }  
+                    },
+                    "opacity": {
+                        "displayName": "Chart opacity",                       
+                        "type": {
+                            "numeric": true
+                        }
+                    },
+                    "formSizex": {
+                        "displayName": "Size x",
+                        "description": "The size x",
+                        "type": {
+                            "numeric": true
+                        }
+                    },
+                    "formSizey": {
+                        "displayName": "Size y",
+                        "description": "The size y",
+                        "type": {
+                            "numeric": true
+                        }
+                    },
+                    "formRadius": {
+                        "displayName": "Radius rect",                       
+                        "type": {
+                            "numeric": true
+                        }
+                    },
+                    "formSpacex": {
+                        "displayName": "Interval x",
+                        "description": "Interval x",
+                        "type": {
+                            "numeric": true
+                        }
+                    },
+                    "formSpacey": {
+                        "displayName": "Interval y",
+                        "description": "Interval y",
+                        "type": {
+                            "numeric": true
+                        }
+                    },
+                    "formSeuil1": {
+                        "displayName": "<= seuil 1",                       
+                        "type": {
+                            "numeric": true
+                        }
+                    },
+                    "formSeuil2": {
+                        "displayName": "> seuil 1 and <= seuil 2",                       
+                        "type": {
+                            "numeric": true
+                        }
+                    },
+                    "formStrokeColor": {
+                        "displayName": "Stroke color",
+                        "description": "Stoke color.",
+                        "type": {
+                            "fill": {
+                                "solid": {
+                                    "color": true
+                                }
+                            }
+                        }
+                    },
+                    "formStrokeSize": {
+                        "displayName": "Stroke size",                       
+                        "type": {
+                            "numeric": true
+                        }
+                    },
+                    "formMeasureColor1": {
+                        "displayName": "Font color (<seuil1)",
+                        "description": "The text color",
+                        "type": {
+                            "fill": {
+                                "solid": {
+                                    "color": true
+                                }
+                            }
+                        }
+                    },
+                    "formMeasureColor2": {
+                        "displayName": "Font color (> seuil1 and < seuil2)",
+                        "description": "The text color",
+                        "type": {
+                            "fill": {
+                                "solid": {
+                                    "color": true
+                                }
+                            }
+                        }
+                    },
+                    "formMeasureColor3": {
+                        "displayName": "Font color (> seuil 2)",
+                        "description": "The text color",
+                        "type": {
+                            "fill": {
+                                "solid": {
+                                    "color": true
+                                }
+                            }
+                        }
+                    },
+                    "formMeasureFontSize": {
+                        "displayName": "Font size",
+                        "description": "The font size measure",
+                        "type": {                             
+                            "numeric": true
+                            }                        
+                    },                    
+                    "formMeasureFontFamily": {
+                        "displayName": "Font family",
+                        "description": "Select font family",
+                        "type": {
+                            "formatting": {
+                                "fontFamily": true
+                            }
+                        }
+                    }                 
+                }
+            },
+            "label": {
+                "displayName": "Label",
+                "properties": {
+                    "show": {
+                        "displayName": "Enable Axis Circle",
+                        "type": { "bool": true }
+                    },
+                    "labelColor": {
+                        "displayName": "Color",
+                        "description": "The text color",
+                        "type": {
+                            "fill": {
+                                "solid": {
+                                    "color": true
+                                }
+                            }
+                        }
+                    },
+                    "labelTextAnchor": {
+                        "displayName": "Position",
+                        "description": "The label position",
+                        "type": {
+                            "enumeration": [
+                                {
+                                    "displayName": "Start",
+                                    "value": "start"
+                                },
+                                {
+                                    "displayName": "Middle",
+                                    "value": "middle"
+                                },
+                                {
+                                    "displayName": "End",
+                                    "value": "end"
+                                }
+                            ]
+                        }
+                    },
+                    "labelFontSize": {
+                        "displayName": "Size",
+                        "description": "The font size label",
+                        "type": {
+                            "numeric": true
+                        }
+                    },                    
+                    "labelFontFamily": {
+                        "displayName": "Font family",
+                        "description": "Select font family",
+                        "type": {
+                            "formatting": {
+                                "fontFamily": true
+                            }
+                        }
+                    },
+                    "labelCadreColor": {
+                        "displayName": "Background Color",
+                        "description": "Background Color",
+                        "type": {
+                            "fill": {
+                                "solid": {
+                                    "color": true
+                                }
+                            }
+                        }
+                    },
+                    "labelCadreOpacity": {
+                        "displayName": "Opacity",                       
+                        "type": {
+                            "numeric": true
+                        }
+                    },
+                    "labelCadreStrokeColor": {
+                        "displayName": "Stroke color",
+                        "description": "The stroke color",
+                        "type": {
+                            "fill": {
+                                "solid": {
+                                    "color": true
+                                }
+                            }
+                        }
+                    },
+                    "labelCadreStrokeSize": {
+                        "displayName": "Stroke size",                       
+                        "type": {
+                            "numeric": true
+                        }
+                    }
+                }
+            },     
+            "measure": {
+                "displayName": "Indicateur",
+                "properties": {
+                    "show": {
+                        "displayName": "Enable Axis Circle",
+                        "type": { "bool": true }
+                    },
+                    "measureTitre": {
+                        "displayName": "Hide/Show Title",                       
+                        "type": {
+                            "bool": true
+                        }
+                    },                    
+                    "measureListIndicateur":{
+                        "displayName": "Measures List",
+                        "type": {
+                            "enumeration": [
+
+                                {
+                                    "displayName": "Start",
+                                    "value": "start"
+                                }
+                            ]
+                        }
+                    }  
+                }
+            }                 
+            
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "category":{"min":1,"max": 1},
+                    "objectif": { "max": 1 }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "for": { "in": "category" }
+                },
+                "values": {
+                    "group": {
+                        "by": "grouping",
+                        "select":[
+                            { "bind": { "to": "measure" } },
+                            { "bind": { "to": "objectif" } }
+                        ]
+                    }
+                }
+            }
+        }        
+    ]
+    ,
+    "sorting": {
+        "implicit": {
+            "clauses": [
+                {
+                    "role": "category",
+                    "direction": 1
+                }
+            ]
+        }
+    }
+}
